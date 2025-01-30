@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneDashboard" prefHeight="1010.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.styleclothesleyeredarchitecture.controller.DashboardController">
+   <children>
+      <Pane layoutX="176.0" layoutY="178.0" prefHeight="1010.0" prefWidth="250.0" style="-fx-background-color: #ffe6e6;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="50.0" layoutY="2.0" prefHeight="1010.0" prefWidth="180.0" style="-fx-background-color: #330000;">
+               <children>
+                  <VBox layoutX="-40.0" layoutY="29.0" prefHeight="950.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="btnCustomer" buttonType="RAISED" onAction="#NavigateToCustomerPage" prefHeight="0.0" prefWidth="200.0" style="-fx-background-color: #cccc00; -fx-background-radius: 10; -fx-border-radius: 10;" text="Customer">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnItem" buttonType="RAISED" onAction="#NavigateToItemPage" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #cccc00; -fx-background-radius: 10; -fx-border-radius: 10;" text="Item">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnCategory" buttonType="RAISED" onAction="#NavigateToCategory" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #cccc00; -fx-background-radius: 10; -fx-border-radius: 10;" text="Category">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnOrder" buttonType="RAISED" onAction="#NavigateToOrderPage" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #cccc00; -fx-background-radius: 10; -fx-border-radius: 10;" text="Orders">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                           <opaqueInsets>
+                              <Insets right="5.0" />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="btnReturn" buttonType="RAISED" onAction="#NavigateToReturnPage" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #cccc00; -fx-background-radius: 10; -fx-border-radius: 10;" text="Return">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnEmployee" buttonType="RAISED" onAction="#NavigateToEmployeePage" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #cccc00; -fx-background-radius: 10; -fx-border-radius: 10;" text="Employee">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnSupplier" buttonType="RAISED" onAction="#NavigateToSupplierPage" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #cccc00; -fx-background-radius: 10; -fx-border-radius: 10;" text="Supplier">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnPayment" buttonType="RAISED" onAction="#NavigateToPaymentPage" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #cccc00; -fx-background-radius: 10; -fx-border-radius: 10;" text="Payment">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnLogOut" buttonType="RAISED" onAction="#btnLogOutOnAction" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #fc6f03; -fx-background-radius: 10; -fx-border-radius: 10;" text="Log Out">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="dashBoardLoadingTablePage" layoutX="232.0" layoutY="246.0" prefHeight="1010.0" prefWidth="1670.0" style="-fx-background-color: #ffe6e6;" AnchorPane.leftAnchor="232.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>
