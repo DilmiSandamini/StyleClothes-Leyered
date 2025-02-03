@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneItem" prefHeight="1010.0" prefWidth="1670.0" style="-fx-background-color: #ffe6e6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.styleclothesshop.controller.ItemController">
+   <children>
+      <Label layoutX="663.0" layoutY="20.0" text="ITEM FORM">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <Pane layoutX="31.0" layoutY="174.0" prefHeight="460.0" prefWidth="642.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: black;">
+         <children>
+            <VBox layoutX="18.0" layoutY="20.0" prefHeight="583.0" prefWidth="636.0">
+               <children>
+                  <HBox prefHeight="80.0" prefWidth="200.0" spacing="50.0">
+                     <children>
+                        <Label text="Item ID">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="40.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="lblItemID" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="100.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="80.0" right="40.0" top="40.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Item Name">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="40.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXTextField fx:id="txtItemName" prefHeight="26.0" prefWidth="380.0">
+                           <HBox.margin>
+                              <Insets left="100.0" right="20.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="110.0" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Price">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="40.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXTextField fx:id="txtItemPrice" prefHeight="26.0" prefWidth="380.0">
+                           <HBox.margin>
+                              <Insets left="150.0" right="20.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="216.0" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Quantity">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="40.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXTextField fx:id="txtQuantity" prefHeight="26.0" prefWidth="380.0">
+                           <HBox.margin>
+                              <Insets left="120.0" right="20.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="322.0" prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Category ID">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="40.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXComboBox fx:id="comCategoryID" prefHeight="25.0" prefWidth="130.0">
+                           <HBox.margin>
+                              <Insets left="100.0" top="35.0" />
+                           </HBox.margin>
+                        </JFXComboBox>
+                        <Label fx:id="lblShowCategory" prefHeight="41.0" prefWidth="191.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" top="30.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <TableView fx:id="tblItem" layoutX="800.0" layoutY="400.0" onMouseClicked="#onClickTable" prefHeight="550.0" prefWidth="800.0" style="-fx-border-color: black;">
+         <columns>
+            <TableColumn fx:id="colItemID" minWidth="160.0" prefWidth="75.0" text="Item ID" />
+            <TableColumn fx:id="colItemName" minWidth="160.0" prefWidth="75.0" text="Item Name" />
+            <TableColumn fx:id="colItemPrice" minWidth="160.0" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="colQuantity" minWidth="160.0" prefWidth="75.0" text="Quantity" />
+            <TableColumn fx:id="colCategoryID" minWidth="160.0" prefWidth="75.0" text="Category ID" />
+         </columns>
+      </TableView>
+      <HBox layoutX="810.0" layoutY="180.0" prefHeight="60.0" prefWidth="780.0" spacing="100.0">
+         <children>
+            <JFXButton fx:id="btnReset" buttonType="RAISED" onAction="#btnResetOnAction" prefHeight="53.0" prefWidth="115.0" style="-fx-background-color: #e67e22; -fx-background-radius: 10; -fx-border-radius: 10;" text="Reset">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnSave" buttonType="RAISED" onAction="#btnSaveOnAction" prefHeight="53.0" prefWidth="115.0" style="-fx-background-color: #e67e22; -fx-background-radius: 10; -fx-border-radius: 10;" text="Save">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnUpdate" buttonType="RAISED" onAction="#btnUpdateOnAction" prefHeight="53.0" prefWidth="115.0" style="-fx-background-color: #e67e22; -fx-background-radius: 10; -fx-border-radius: 10;" text="Update">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnDelete" buttonType="RAISED" onAction="#btnDeleteOnAction" prefHeight="53.0" prefWidth="115.0" style="-fx-background-color: #e67e22; -fx-background-radius: 10; -fx-border-radius: 10;" text="Delete">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox layoutX="766.0" layoutY="268.0" prefHeight="60.0" prefWidth="796.0">
+         <children>
+            <JFXButton fx:id="btnItemReport" buttonType="RAISED" onAction="#btnItemReportOnAction" prefHeight="53.0" prefWidth="239.0" style="-fx-background-color: #e67e22; -fx-background-radius: 10; -fx-border-radius: 10;" text="All Item Report">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="300.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children></HBox>
+      <Label fx:id="lblNotify" layoutX="100.0" layoutY="750.0" prefHeight="60.0" prefWidth="500.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
