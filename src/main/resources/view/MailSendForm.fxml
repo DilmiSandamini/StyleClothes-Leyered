@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.styleclothesshop.controller.MailSendController">
+   <children>
+      <Label layoutX="261.0" layoutY="24.0" text="E-MAIL SEND" textFill="#8d0a38" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSubject" layoutX="212.0" layoutY="154.0" opacity="0.82" prefHeight="25.0" prefWidth="500.0" promptText="Subject" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea fx:id="txtBody" layoutX="77.0" layoutY="194.0" opacity="0.73" prefHeight="200.0" prefWidth="500.0" promptText="Body" style="-fx-border-color: black;" AnchorPane.leftAnchor="25.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton layoutX="55.0" layoutY="430.0" onAction="#sendUsingGmailOnAction" style="-fx-background-color: #790d31;" text="Send Using Gmail" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="261.0" layoutY="430.0" onAction="#sendUsingSendgridOnAction" style="-fx-background-color: #790d31;" text="Send Using Sendgrid" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
