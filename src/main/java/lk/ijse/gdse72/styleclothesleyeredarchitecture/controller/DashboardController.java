@@ -1,15 +1,21 @@
 package lk.ijse.gdse72.styleclothesleyeredarchitecture.controller;
 
 import com.jfoenix.controls.JFXButton;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.util.Duration;
 
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
 public class DashboardController implements Initializable {
@@ -45,10 +51,14 @@ public class DashboardController implements Initializable {
     private JFXButton btnSupplier;
 
     @FXML
+    private Label lblTime;
+
+    @FXML
     private AnchorPane dashBoardLoadingTablePage;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        startClock();
     }
 
     @FXML
@@ -60,6 +70,7 @@ public class DashboardController implements Initializable {
     void NavigateToCustomerPage(ActionEvent event) {
         navigateTo("/view/CustomerForm.fxml");
     }
+
     @FXML
     void NavigateToEmployeePage(ActionEvent event) {
         navigateTo("/view/EmployeeForm.fxml");
@@ -108,5 +119,19 @@ public class DashboardController implements Initializable {
             e.printStackTrace();
             new Alert(Alert.AlertType.ERROR, "Fail to load page!").show();
         }
+    }
+
+    private void startClock() {
+        Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), event -> {
+            updateDateTime();
+        }));
+        timeline.setCycleCount(Timeline.INDEFINITE);
+        timeline.play();
+    }
+
+    private void updateDateTime() {
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd    HH:mm:ss");
+        lblTime.setText(now.format(formatter));
     }
 }

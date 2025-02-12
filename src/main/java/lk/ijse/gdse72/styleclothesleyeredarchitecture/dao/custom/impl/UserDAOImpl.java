@@ -58,5 +58,15 @@ public class UserDAOImpl implements UserDAO {
     @Override
     public boolean ValidUser(String username, String password) throws Exception {
         ResultSet rst = SQLUtil.execute("SELECT * FROM user WHERE name = ? AND password = ?", username, password);
-        return rst.next();    }
+        return rst.next();
+    }
+
+    @Override
+    public int userCount() throws SQLException {
+        ResultSet rst = SQLUtil.execute("SELECT COUNT(*) FROM user");
+        if (rst.next()) {
+            return rst.getInt(1);
+        }
+        return 0;
+    }
 }

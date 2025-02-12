@@ -55,6 +55,13 @@ public class RegisterController {
 
     @FXML
     void btnSignUpOnAction(ActionEvent event) throws IOException, SQLException {
+        int userCount = userBO.getUserCount();
+
+        if (userCount >= 2) {
+            new Alert(Alert.AlertType.WARNING, "User limit reached! Cannot save more than 3 users.").show();
+            return;
+        }
+
             String userID = userBO.getNextUserId();
             lblUserId.setText(userID);
             String name = txtUsername.getText();

@@ -31,7 +31,7 @@
                         <Font size="19.0" />
                      </font>
                   </JFXTextField>
-                  <JFXTextField fx:id="txtEmailOrPhone" focusColor="BLACK" labelFloat="true" layoutX="60.0" layoutY="370.0" prefHeight="30.0" prefWidth="580.0" promptText="Email">
+                  <JFXTextField fx:id="txtEmailOrPhone" focusColor="BLACK" labelFloat="true" layoutX="60.0" layoutY="370.0" prefHeight="30.0" prefWidth="580.0" promptText="Email or Phone">
                      <font>
                         <Font size="19.0" />
                      </font>

@@ -11,8 +11,8 @@ public interface UserBO extends SuperBO {
     boolean updateUser(UserDTO userDTO) throws SQLException;
     boolean deleteUser(String userID) throws SQLException;
     ArrayList<UserDTO> getAllUsers() throws SQLException;
-
     boolean isValidUser(String username, String password) throws Exception;
-
     String getNextUserId() throws SQLException;
+    int getUserCount() throws SQLException;
+
 }

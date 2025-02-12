@@ -61,4 +61,9 @@ public class UserBOImpl implements UserBO {
     public String getNextUserId() throws SQLException {
         return userDAO.getNextId();
     }
+
+    @Override
+    public int getUserCount() throws SQLException {
+        return userDAO.userCount();
+    }
 }
