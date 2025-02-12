@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorPaneLogin" prefHeight="1010.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.styleclothesshop.controller.LoginController">
+<AnchorPane fx:id="anchorPaneLogin" prefHeight="1010.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.styleclothesleyeredarchitecture.controller.LoginController">
    <children>
       <ImageView fitHeight="1010.0" fitWidth="1920.0" layoutX="464.0" layoutY="320.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>

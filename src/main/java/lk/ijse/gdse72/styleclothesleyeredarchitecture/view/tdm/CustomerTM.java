@@ -1,4 +1,4 @@
-package lk.ijse.gdse72.styleclothesleyeredarchitecture.dto.tm;
+package lk.ijse.gdse72.styleclothesleyeredarchitecture.view.tdm;
 
 import lombok.*;
 

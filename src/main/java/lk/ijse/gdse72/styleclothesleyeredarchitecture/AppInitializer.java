@@ -11,11 +11,11 @@ import java.io.IOException;
 public class AppInitializer extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(AppInitializer.class.getResource("/view/DashboardForm.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(AppInitializer.class.getResource("/view/WelcomeForm.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Dashboard page");
         stage.getIcons().add(
-                new Image(getClass().getResourceAsStream("/icon/accessories_7695898.png"))
+                new Image(getClass().getResourceAsStream("/icon/Shopping Icon.png"))
         );
         stage.setScene(scene);
         stage.show();

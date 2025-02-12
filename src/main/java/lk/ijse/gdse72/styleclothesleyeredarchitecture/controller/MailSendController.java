@@ -1,4 +1,4 @@
-package lk.ijse.gdse72.styleclothesshop.controller;
+package lk.ijse.gdse72.styleclothesleyeredarchitecture.controller;
 
 import com.jfoenix.controls.JFXTextArea;
 import com.jfoenix.controls.JFXTextField;
@@ -83,7 +83,7 @@ public class MailSendController {
             return;
         }
 
-        final String FROM = "jkdilmisandamini@gmail.com";
+        final String FROM = "navidu200210@gmail.com";
 
         String subject = txtSubject.getText();
         String body = txtBody.getText();

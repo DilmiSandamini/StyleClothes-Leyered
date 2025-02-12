@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.styleclothesshop.controller.MailSendController">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.styleclothesleyeredarchitecture.controller.MailSendController">
    <children>
       <Label layoutX="261.0" layoutY="24.0" text="E-MAIL SEND" textFill="#8d0a38" underline="true">
          <font>

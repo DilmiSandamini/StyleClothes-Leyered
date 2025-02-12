@@ -1,4 +1,4 @@
-package lk.ijse.gdse72.styleclothesshop.controller;
+package lk.ijse.gdse72.styleclothesleyeredarchitecture.controller;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;

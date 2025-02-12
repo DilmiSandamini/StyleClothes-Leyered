@@ -7,13 +7,15 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorPaneCustomer" prefHeight="1010.0" prefWidth="1670.0" style="-fx-background-color: #ffe6e6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.styleclothesshop.controller.CustomerController">
+<AnchorPane fx:id="anchorPaneCustomer" prefHeight="1010.0" prefWidth="1670.0" style="-fx-background-color: #ffe6e6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.styleclothesleyeredarchitecture.controller.CustomerController">
    <children>
       <HBox layoutX="760.0" layoutY="261.0" prefHeight="60.0" prefWidth="697.0" spacing="40.0" AnchorPane.rightAnchor="146.0">
          <children>
@@ -155,7 +157,7 @@
                         <Insets top="-10.0" />
                      </VBox.margin>
                   </HBox>
-                  <HBox layoutX="10.0" layoutY="428.0" prefHeight="80.0" prefWidth="200.0">
+                  <HBox layoutX="10.0" layoutY="428.0" prefHeight="80.0" prefWidth="530.0" spacing="60.0">
                      <children>
                         <Label text="Request ItemID">
                            <font>
@@ -165,32 +167,24 @@
                               <Insets left="20.0" right="20.0" top="45.0" />
                            </HBox.margin>
                         </Label>
-                        <JFXTextField fx:id="txtRequestItemID" prefHeight="26.0" prefWidth="380.0">
-                           <HBox.margin>
-                              <Insets left="65.0" right="20.0" top="40.0" />
-                           </HBox.margin>
+                        <JFXComboBox fx:id="comRequestItemID" prefHeight="75.0" prefWidth="149.0">
+                           <padding>
+                              <Insets top="50.0" />
+                           </padding>
+                        </JFXComboBox>
+                        <Label fx:id="lblShowItem" prefHeight="41.0" prefWidth="191.0">
                            <font>
-                              <Font size="18.0" />
+                              <Font size="16.0" />
                            </font>
-                        </JFXTextField>
+                           <padding>
+                              <Insets top="50.0" />
+                           </padding>
+                        </Label>
                      </children>
                      <VBox.margin>
                         <Insets top="-10.0" />
                      </VBox.margin>
                   </HBox>
-                  <JFXComboBox fx:id="comRequestItemID" prefHeight="40.0" prefWidth="130.0">
-                     <VBox.margin>
-                        <Insets left="230.0" />
-                     </VBox.margin>
-                  </JFXComboBox>
-                  <Label fx:id="lblShowItem" prefHeight="41.0" prefWidth="191.0">
-                     <VBox.margin>
-                        <Insets left="400.0" top="-40.0" />
-                     </VBox.margin>
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Label>
                </children>
             </VBox>
          </children>
@@ -239,5 +233,10 @@
             <Font name="System Bold" size="46.0" />
          </font>
       </Label>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="546.0" layoutY="14.0">
+         <image>
+            <Image url="@../icon/Customer%20Image.gif" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

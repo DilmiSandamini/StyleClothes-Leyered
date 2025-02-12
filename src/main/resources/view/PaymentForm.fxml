@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorPanePayment" prefHeight="1010.0" prefWidth="1670.0" style="-fx-background-color: #ffe6e6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.styleclothesshop.controller.PaymentController">
+<AnchorPane fx:id="anchorPanePayment" prefHeight="1010.0" prefWidth="1670.0" style="-fx-background-color: #ffe6e6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.styleclothesleyeredarchitecture.controller.PaymentController">
    <children>
       <Label layoutX="673.0" layoutY="30.0" text="PAYMENT FORM">
          <font>
